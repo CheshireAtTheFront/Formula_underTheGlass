@@ -6,11 +6,10 @@
 
 .container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
-  height: 500px;
-  width: 500px;
+  justify-content: space-between;
+  margin: 12% auto;
+  height: 150px;
+  width: 350px;
   border: 1px solid red;
 }
 
@@ -19,7 +18,7 @@
   border: 1px solid #fd883aec;
 }
 
-.box {
+.box-input {
   width: 200px;
   margin: 5px 0; 
   border: 1px solid #3afd6bec;
