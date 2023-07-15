@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  height: 500px;
+  width: 500px;
+  border: 1px solid red;
+}
+
+.content {
+	width: 250px;
+  border: 1px solid #fd883aec;
+}
+
+.box {
+  width: 200px;
+  margin: 5px 0; 
+  border: 1px solid #3afd6bec;
+  
+}
+
+.button-conclusion {
+	margin: 5px 0; 
+	height: 25px;
+	width: 80px;
+}
