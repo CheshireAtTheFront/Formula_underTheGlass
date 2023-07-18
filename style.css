@@ -18,15 +18,36 @@
   border: 1px solid #fd883aec;
 }
 
+.style-input {
+  margin-top: 8px;
+  text-align: center;
+  width: 100px;
+}
+
 .box-input {
-  width: 200px;
+  /* width: 200px; */
   margin: 5px 0; 
   border: 1px solid #3afd6bec;
   
+}
+
+.box-for-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
 }
 
 .button-conclusion {
 	margin: 5px 0; 
 	height: 25px;
 	width: 80px;
+}
+
+.answer {
+padding: 3px;
+  height: 25px;
+	width: 80px;
+  border: 1px solid grey;
+  text-align: center;
 }
