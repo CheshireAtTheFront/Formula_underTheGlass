@@ -33,9 +33,10 @@
 
 .box-for-button {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  width: 200px;
+  margin-right: 0;
+  /* min-width: 200px; */
 }
 
 .button-conclusion {
@@ -45,9 +46,10 @@
 }
 
 .answer {
-padding: 3px;
+  padding: 3px;
   height: 25px;
-	width: 80px;
+	min-width: 80px;
   border: 1px solid grey;
+  background: #a5a5a59a;
   text-align: center;
 }
