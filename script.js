@@ -13,41 +13,28 @@ let valueGlasses_FOUR = 22;
 
 let theThicknessOfTheJumper = 0; // толщина перемычки
 
-// let ArrlistOfGlasses = listOfGlasses.children;
-// console.log(ArrlistOfGlasses.value);
-// let arrList = Array.from(listOfGlasses.children);
+
+const listOfGlasses = document.querySelector(".list-of-glasses");
+const selectList = document.querySelectorAll(".glasse");
+
+let arrList = Array.from(selectList);
 // console.log(arrList[0].value);
 
-// theThicknessOfTheJumper = arrList[0].value;
 
-// if (arrList[0].change) {
-// 		console.log(true);	
+// for (let list of selectList) {
+// 	list.addEventListener("change", () => {
+// 		for(let i = 0; i < arrList; i++) {
+// 			theThicknessOfTheJumper = arrList[i].value;
+// 		}
+// 	})
 // }
 
-
-function selectingGlassesFromTheList () {
-	const listOfGlasses = document.querySelectorAll(".glasse");
-	 for(let list of listOfGlasses) {
-		list.addEventListener("click", () => {
-			this.value = "получилось"
-		})
-	 }
+for(let i = 0; i < arrList; i++) {
+	theThicknessOfTheJumper = arrList[i].value;
+	console.log(theThicknessOfTheJumper = arrList[i].value); 
 }
-selectingGlassesFromTheList();
 
-// for(let list of arrList) {
-	
-// 	if (list[1].change) {
-// 		theThicknessOfTheJumper = valueGlasses_ONE;
-// 	} else if(list[2].change) {
-// 		theThicknessOfTheJumper = valueGlasses_TWO;
-// 	} else if(list[3].change) {
-// 		theThicknessOfTheJumper = valueGlasses_THREE;
-// 	} else if(list[4].change) {
-// 		console.log(theThicknessOfTheJumper = valueGlasses_FOUR);
-// 	}
 
-// }
 
 
 buttonConclusion.addEventListener("click", function() {
