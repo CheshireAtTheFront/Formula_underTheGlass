@@ -9,15 +9,22 @@
 <body>
     <div class="container">
         <div class="content">
-          <div class="box-input">
-						<p>Высота ветора под скос/ступеньку</p>
-						<input type="number" class="bevel-vector style-input">  
+          <div class="box-input box-input-h">
+						<p>Высота вектора под скос/ступеньку</p>
+						<input class="bevel-vector style-input">  
 						<span>мм</span>
 					</div>
 					<div class="box-input">
-						<p>Кол-во перемычек</p>
-						<input type="number" class="quantity-jumpers style-input">  
-						<span>мм</span>
+						<div>
+						  <p>Кол-во перемычек</p>
+						  <input class="quantity-jumpers style-input">  
+						  <span>мм</span>
+						</div>
+						<div>
+						  <p>Кол-во окошек</p>
+						  <input class="quantity-windows style-input">  
+						  <span>мм</span>
+						</div>
 					</div>
 					<div class="box-for-button">
 						<button class="button-conclusion">Рассчитать</button>
@@ -26,11 +33,11 @@
         </div>
         <!-- блок списка разновидности стекл -->
         <div class="box-list">
-          <select name="list" id="list-select" class="list-of-glasses">
-            <option value="22" class="glasse">Стекло 1</option>
-            <option value="15" class="glasse">Стекло 2</option>
-            <option value="25" class="glasse">Стекло 3</option>
-            <option value="22" class="glasse">Стекло 4</option>
+          <select name="list" class="list-of-glasses">
+            <option value="14.5" class="glasse">Стекло 1</option>
+            <option value="5" class="glasse">Стекло 2</option>
+            <option value="5" class="glasse">Стекло 3</option>
+            <option value="12" class="glasse">Стекло 4</option>
           </select>
         </div>
     </div>
