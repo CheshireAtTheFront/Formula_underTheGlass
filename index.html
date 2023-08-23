@@ -34,11 +34,20 @@
         <!-- блок списка разновидности стекл -->
         <div class="box-list">
           <select name="list" class="list-of-glasses">
-            <option value="14.5" class="glasse">Стекло 1</option>
-            <option value="5" class="glasse">Стекло 2</option>
-            <option value="5" class="glasse">Стекло 3</option>
-            <option value="12" class="glasse">Стекло 4</option>
+              <optgroup label = "Стекла" class="glasse">
+                <option value="14.5" class="glasse">Стекло 1</option>
+                <option value="5" class="glasse">Стекло 2</option>
+                <option value="5" class="glasse">Стекло 3</option>
+                <option value="12" class="glasse">Стекло 4</option>
+              </optgroup>
+            <optgroup label = "С 112/1 и Мод" class="glasse">
+                <option value="14" class="glasse">Стекло 4</option>
+            </optgroup>
           </select>
+					<div class="style-flex box-for-button">
+						<button class="button-conclusion">Изменить</button>
+						<input class="quantity-jumpers style-input">
+					</div>
         </div>
     </div>
     <script src="./script.js"></script>

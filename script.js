@@ -7,11 +7,25 @@ const listOfGlasses = document.querySelector(".list-of-glasses");
 
 
 function mainFunction() {
-  let theThicknessOfTheJumper = 0; // толщина перемычки
+  let theThicknessOfTheJumper = listOfGlasses[0].value; // толщина перемычки
   listOfGlasses.addEventListener("change", function() {
-    theThicknessOfTheJumper = this.value
+    theThicknessOfTheJumper = this.value;
     console.log(theThicknessOfTheJumper);
+    listOfGlasses.oncontextmenu = function() {
+      const el = document.createElement("input");
+      el.value = theThicknessOfTheJumper;
+    }
   });
+  
+// контекстное меню
+  // function contextMenu() {
+  //   listOfGlasses.oncontextmenu = function() {
+  //     const el = document.createElement("input");
+  //     el.value = theThicknessOfTheJumper;
+  //   }
+  // }
+  // contextMenu();
+  
   
   buttonConclusion.addEventListener("click", function() {
     // формула

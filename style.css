@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   margin: 12% auto;
-  height: 180px;
+  /* height: 200px; */
   width: 350px;
   border: 1px solid red;
 }
@@ -24,9 +24,10 @@
   width: 100px;
 }
 
-/* .box-input-h{
+.box-list {
+  display: flex;
   flex-direction: column;
-} */
+}
 
 .box-input {
   /* margin: 5px 0;  */
@@ -39,6 +40,11 @@
   align-items: center;
   margin-right: 0;
   /* min-width: 200px; */
+}
+
+.style-flex {
+  flex-direction: column;
+  margin-top: 90px;
 }
 
 .button-conclusion {
