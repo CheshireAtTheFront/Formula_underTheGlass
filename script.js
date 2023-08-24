@@ -1,8 +1,10 @@
-let inputHeightVector = document.querySelector(".bevel-vector");
-let inputQuantityJumpers = document.querySelector(".quantity-jumpers");
+let heightVector = document.querySelector(".bevel-vector");
+let quantityJumpers = document.querySelector(".quantity-jumpers");
 let windowSize = document.querySelector(".answer");
+let makeChanges = document.querySelector(".make-changes");
 let quantityWindow = document.querySelector(".quantity-windows");
-let buttonConclusion = document.querySelector(".button-conclusion");
+const buttonConclusion = document.querySelector(".button-conclusion");
+const btnToChange = document.querySelector(".btn-to-change");
 const listOfGlasses = document.querySelector(".list-of-glasses");
 
 
@@ -11,26 +13,20 @@ function mainFunction() {
   listOfGlasses.addEventListener("change", function() {
     theThicknessOfTheJumper = this.value;
     console.log(theThicknessOfTheJumper);
-    listOfGlasses.oncontextmenu = function() {
-      const el = document.createElement("input");
-      el.value = theThicknessOfTheJumper;
-    }
   });
   
-// контекстное меню
-  // function contextMenu() {
-  //   listOfGlasses.oncontextmenu = function() {
-  //     const el = document.createElement("input");
-  //     el.value = theThicknessOfTheJumper;
-  //   }
-  // }
-  // contextMenu();
-  
-  
+  btnToChange.addEventListener("click", function() {
+    // измение значения стекл
+    let option = listOfGlasses.options[4];
+    option.value = makeChanges.value;
+    theThicknessOfTheJumper = makeChanges.value;
+   });
+   
+   
   buttonConclusion.addEventListener("click", function() {
     // формула
-    let d = +theThicknessOfTheJumper * +inputQuantityJumpers.value;
-    let x = (+inputHeightVector.value - d) / quantityWindow.value + +theThicknessOfTheJumper;
+    let d = +theThicknessOfTheJumper * +quantityJumpers.value;
+    let x = (+heightVector.value - d) / quantityWindow.value + +theThicknessOfTheJumper;
     windowSize.textContent = x;
   });
     
