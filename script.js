@@ -25,13 +25,15 @@ let calculateByTheFormula = buttonConclusion.addEventListener("click", function(
     let heightVector = document.querySelector(".bevel-vector");
     let quantityWindow = document.querySelector(".quantity-windows");
     // формула
+    
+    if(+quantityJumpers.value >= +quantityWindow.value) {
+      let textError = "Ошибка"
+      windowSize.textContent.style.color = "red";
+      windowSize.textContent = textError;
+    } 
     let d = +theThicknessOfTheJumper * +quantityJumpers.value;
     let x = (+heightVector.value - d) / quantityWindow.value + +theThicknessOfTheJumper;
-    if(+quantityJumpers.value > +quantityWindow.value) {
-      windowSize.textContent = "Ошибка";
-    }
     windowSize.textContent = x.toFixed(3);
-    
   });
   
 
