@@ -28,12 +28,13 @@ let calculateByTheFormula = buttonConclusion.addEventListener("click", function(
     
     if(+quantityJumpers.value >= +quantityWindow.value) {
       let textError = "Ошибка"
-      windowSize.textContent.style.color = "red";
+      windowSize.style = "red";
       windowSize.textContent = textError;
-    } 
-    let d = +theThicknessOfTheJumper * +quantityJumpers.value;
-    let x = (+heightVector.value - d) / quantityWindow.value + +theThicknessOfTheJumper;
-    windowSize.textContent = x.toFixed(3);
+    } else {
+      let d = +theThicknessOfTheJumper * +quantityJumpers.value;
+      let x = (+heightVector.value - d) / quantityWindow.value + +theThicknessOfTheJumper;
+      windowSize.textContent = x.toFixed(3);
+    }
   });
   
 

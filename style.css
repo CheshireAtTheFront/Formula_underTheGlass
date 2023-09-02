@@ -4,18 +4,25 @@
   box-sizing: border-box;
 }
 
+input {
+  border-radius: 8px;
+}
+
 .container {
   display: flex;
-  justify-content: space-between;
   margin: 12% auto;
-  /* height: 200px; */
+  padding: 6px;
   width: 350px;
-  border: 1px solid red;
+  background-color: rgba(206, 206, 206, 0.664);
 }
 
 .content {
-	width: 250px;
-  border: 1px solid #fd883aec;
+	padding-right: 20px;
+  border-right: 2px solid #000;
+}
+
+.div_style {
+  margin-top: 10px;
 }
 
 .style-input {
@@ -27,19 +34,17 @@
 .box-list {
   display: flex;
   flex-direction: column;
+  padding-left: 20px;
 }
 
-.box-input {
-  /* margin: 5px 0;  */
-  border: 1px solid #3afd6bec;
+.list-of-glasses {
+  width: 100px;
 }
 
 .box-for-button {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-right: 0;
-  /* min-width: 200px; */
+  /* align-items: center; */
+  margin: 14px 0 0;
 }
 
 .style-flex {
@@ -47,24 +52,26 @@
   margin-top: 90px;
 }
 
-/* .style-input {
-  
-} */
-
-
-
+.make-changes {
+  width: 80px;
+}
 
 .button-conclusion {
-	margin: 5px 0; 
 	height: 25px;
 	width: 80px;
 }
 
+.btn-to-change {
+  margin-top: 5px;
+}
+
 .answer {
+  margin-left: 10px;
   padding: 3px;
   height: 25px;
 	min-width: 80px;
   border: 1px solid grey;
-  background: #a5a5a59a;
+  background: #beffe1;
   text-align: center;
+  border-radius: 8px;
 }
