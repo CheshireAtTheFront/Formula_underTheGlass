@@ -26,14 +26,29 @@ let calculateByTheFormula = buttonConclusion.addEventListener("click", function(
     let quantityWindow = document.querySelector(".quantity-windows");
     // формула
     
-    if(+quantityJumpers.value >= +quantityWindow.value) {
-      let textError = "Ошибка"
-      windowSize.style = "red";
+    function Error() {
+      let textError = "Error"
+      windowSize.style.color = "red";
       windowSize.textContent = textError;
-    } else {
+    }
+  
+    function formula() {
       let d = +theThicknessOfTheJumper * +quantityJumpers.value;
       let x = (+heightVector.value - d) / quantityWindow.value + +theThicknessOfTheJumper;
       windowSize.textContent = x.toFixed(3);
+      windowSize.style.color = "#000000";
+    }
+  
+    if(quantityJumpers.value == "" || quantityWindow.value == "" || heightVector.value == "") {
+      Error();
+    } else {
+      formula();
+    }
+  
+    if(+quantityJumpers.value >= +quantityWindow.value) {
+      Error();
+    } else {
+      formula();
     }
   });
   

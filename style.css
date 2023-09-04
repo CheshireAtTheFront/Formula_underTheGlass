@@ -28,13 +28,14 @@ input {
 .style-input {
   margin-top: 8px;
   text-align: center;
-  width: 100px;
+  width: 80px;
 }
 
 .box-list {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
+  width: 192px;
 }
 
 .list-of-glasses {
@@ -43,13 +44,12 @@ input {
 
 .box-for-button {
   display: flex;
-  /* align-items: center; */
   margin: 14px 0 0;
 }
 
 .style-flex {
   flex-direction: column;
-  margin-top: 90px;
+  margin-top: 89px;
 }
 
 .make-changes {
@@ -62,16 +62,12 @@ input {
 }
 
 .btn-to-change {
-  margin-top: 5px;
+  margin-top: 14px;
 }
 
 .answer {
   margin-left: 10px;
-  padding: 3px;
-  height: 25px;
 	min-width: 80px;
-  border: 1px solid grey;
-  background: #beffe1;
+  border-bottom: 2px solid #000000;
   text-align: center;
-  border-radius: 8px;
 }
