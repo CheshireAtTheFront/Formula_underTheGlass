@@ -8,12 +8,14 @@ input {
   border-radius: 8px;
 }
 
+input:focus {outline: none;}
+
 .container {
   display: flex;
   margin: 12% auto;
   padding: 6px;
   width: 350px;
-  background-color: rgba(206, 206, 206, 0.664);
+  background: linear-gradient(to right, rgb(255 255 255 / 0%) 0%,rgb(255 255 255) 33%,rgb(141 141 141 / 79%) 50%,rgba(0,0,0,0.79) 57%,rgb(255 255 255 / 89%) 65%,rgb(133 133 133) 87%,rgb(229 229 229 / 0%) 100%);
 }
 
 .content {
@@ -27,8 +29,11 @@ input {
 
 .style-input {
   margin-top: 8px;
-  text-align: center;
   width: 80px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 4px 0px rgb(108, 110, 110);
+  -moz-box-shadow: 0px 0px 4px 0px rgb(108, 110, 110);
+  box-shadow: 0px 0px 4px 0px rgb(108, 110, 110);
 }
 
 .box-list {
@@ -59,6 +64,19 @@ input {
 .button-conclusion {
 	height: 25px;
 	width: 80px;
+	cursor: pointer;
+	border: none;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 0px 6px 1px #000000;
+  -moz-box-shadow: 0px 0px 6px 1px #000000;
+  box-shadow: 0px 0px 4px 1px #000000;
+  transition: 0.1s all;
+  background-color: rgb(255, 255, 255);
+}
+
+.button-conclusion:active {
+  transform: scale(0.98);
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.24);
 }
 
 .btn-to-change {

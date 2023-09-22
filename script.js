@@ -24,14 +24,13 @@ let calculateByTheFormula = buttonConclusion.addEventListener("click", function(
     let quantityJumpers = document.querySelector(".quantity-jumpers");
     let heightVector = document.querySelector(".bevel-vector");
     let quantityWindow = document.querySelector(".quantity-windows");
-    // формула
     
     function Error() {
       let textError = "Error"
       windowSize.style.color = "red";
       windowSize.textContent = textError;
     }
-  
+  // формула
     function formula() {
       let d = +theThicknessOfTheJumper * +quantityJumpers.value;
       let x = (+heightVector.value - d) / quantityWindow.value + +theThicknessOfTheJumper;
